@@ -13,10 +13,6 @@ h2 {
   color: #23689b;
 }
 
-.image {
-  size: 128px;
-}
-
 .weather-app {
   max-width: 800px;
   margin: 30px auto;
