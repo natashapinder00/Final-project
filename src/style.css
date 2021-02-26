@@ -1,0 +1,38 @@
+body {
+  color: #4793ad;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+h1 {
+  color: #4793ad;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  color: #23689b;
+}
+
+.image {
+  size: 128px;
+}
+
+.weather-app {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 20px;
+}
+
+.small {
+  cursor: pointer;
+}
+
+li {
+  text-align: inherit;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
