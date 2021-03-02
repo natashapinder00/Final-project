@@ -26,13 +26,13 @@ h2 {
 }
 
 li {
+  color: #23689b;
   text-align: inherit;
   list-style: none;
   margin: -5px;
   padding: -5px;
   font-size: 20px;
   width: 700px;
-  text-transform: capitalize;
 }
 
 li:first-child {
@@ -40,4 +40,8 @@ li:first-child {
   position: relative;
   top: -2px;
   left: 310px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
 }
