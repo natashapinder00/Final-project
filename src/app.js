@@ -31,7 +31,7 @@ function formatHours(timestamp) {
 
 
 function displayTemperature(response) {
-
+  
     let cityElement = document.querySelector("#city");
     let temperatureElement = document.querySelector("#temperature");
     let descriptionElement =document.querySelector("#description");
@@ -46,6 +46,9 @@ function displayTemperature(response) {
     iconElement.setAttribute("alt", response.data.weather[0].description);
   
 }
+
+
+
 
 let apiKey = "d2b8a0db5e85065ca5e0d9c6fb59f04a";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
