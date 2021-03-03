@@ -36,14 +36,14 @@ function displayTemperature(response) {
     let temperatureElement = document.querySelector("#temperature");
     let descriptionElement =document.querySelector("#description");
     let dateElement = document.querySelector("#date");
-    
-   
+    let iconElement = document.querySelector("icon");
    
     cityElement.innerHTML = response.data.name;
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
     descriptionElement.innerHTML = response.data.weather[0].description;
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
-    
+    iconElement.setAttribute("src", `src/media/${response.data.weather[0].icon}.png`);
+    iconElement.setAttribute("alt", response.data.weather[0].description);
   
 }
 
