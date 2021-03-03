@@ -36,24 +36,36 @@ function displayTemperature(response) {
     let temperatureElement = document.querySelector("#temperature");
     let descriptionElement =document.querySelector("#description");
     let dateElement = document.querySelector("#date");
-    let iconElement = document.querySelector("icon");
-   
+    let iconElement = document.querySelector("#icon");
+
+
     cityElement.innerHTML = response.data.name;
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
     descriptionElement.innerHTML = response.data.weather[0].description;
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
-    iconElement.setAttribute("src", `src/media/${response.data.weather[0].icon}.png`);
+    iconElement.setAttribute(
+    "src",
+    `/src/media/${response.data.weather[0].icon}.png`
+  );
     iconElement.setAttribute("alt", response.data.weather[0].description);
   
 }
 
-
+function search(event) {
+  event.preventDefauult();
+  let cityInputElement = document.querySelector("#city-input");
+  console.log(cityInputElement);
+}
 
 
 let apiKey = "d2b8a0db5e85065ca5e0d9c6fb59f04a";
+let city = "London";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
 
 
 axios.get(apiUrl).then(displayTemperature);
 
-console.log(apiUrl);
+
+
+let form = document.querySelector("#search-form")
+form.addEventListender("submit", search);
