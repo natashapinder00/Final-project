@@ -1,5 +1,5 @@
 body {
-  color: #4793ad;
+  color: #0f84ac;
   text-align: center;
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -7,6 +7,8 @@ h1 {
   color: #4793ad;
   text-align: center;
   font-size: 50px;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 
 h2 {

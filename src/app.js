@@ -40,7 +40,7 @@ function displayTemperature(response) {
    
    
     cityElement.innerHTML = response.data.name;
-    temperatureElement.innerHTML = Math.round (celciusTemperature);
+    temperatureElement.innerHTML = Math.round(response.data.main.temp);
     descriptionElement.innerHTML = response.data.weather[0].description;
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
     
