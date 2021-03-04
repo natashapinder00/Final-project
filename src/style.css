@@ -47,3 +47,19 @@ li:first-child {
 li:first-letter {
   text-transform: capitalize;
 }
+
+.weather-app img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+  position: relative;
+  top: -18px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+  position: relative;
+  top: -18px;
+}

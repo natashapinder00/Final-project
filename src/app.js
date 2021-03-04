@@ -45,8 +45,8 @@ function displayTemperature(response) {
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
     iconElement.setAttribute(
     "src",
-    `/src/media/${response.data.weather[0].icon}.png`
- 
+    `src/media/${response.data.weather[0].icon}.png`
+
     )}
 
 function search(event) {
@@ -68,5 +68,6 @@ axios.get(apiUrl).then(displayTemperature);
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
-search("london");
+
+
 
