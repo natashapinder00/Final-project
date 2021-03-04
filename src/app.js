@@ -46,13 +46,11 @@ function displayTemperature(response) {
     iconElement.setAttribute(
     "src",
     `/src/media/${response.data.weather[0].icon}.png`
-  );
-    iconElement.setAttribute("alt", response.data.weather[0].description);
-  
+ 
 }
 
 function search(event) {
-  event.preventDefauult();
+  event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   console.log(cityInputElement);
 }
@@ -67,5 +65,8 @@ axios.get(apiUrl).then(displayTemperature);
 
 
 
-let form = document.querySelector("#search-form")
+let form = document.querySelector("#search-form");
 form.addEventListender("submit", search);
+
+search("london");
+
