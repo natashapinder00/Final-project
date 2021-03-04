@@ -47,7 +47,7 @@ function displayTemperature(response) {
     "src",
     `/src/media/${response.data.weather[0].icon}.png`
  
-}
+    )}
 
 function search(event) {
   event.preventDefault();
