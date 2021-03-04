@@ -66,7 +66,7 @@ axios.get(apiUrl).then(displayTemperature);
 
 
 let form = document.querySelector("#search-form");
-form.addEventListender("submit", search);
+form.addEventListener("submit", search);
 
 search("london");
 
