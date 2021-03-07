@@ -4,7 +4,7 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 h1 {
-  color: #4793ad;
+  color: #0f84ac;
   text-align: center;
   font-size: 50px;
   padding: 0 auto;
@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  color: #23689b;
+  color: #ff7901;
 }
 
 .weather-app {
@@ -28,7 +28,7 @@ h2 {
 }
 
 li {
-  color: #23689b;
+  color: #0f84ac;
   text-align: inherit;
   list-style: none;
   margin: -5px;

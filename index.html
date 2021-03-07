@@ -19,11 +19,14 @@
 <body>
     <div class="container">
 <div class="weather-app">
+    <div class="weather-app-wrapper"></div>
+  
     Last updated: <span id="date"></span>
         <h1 id="city"></h1>
        
-        <h2 id="temperature"></h2><a href="#" id="celsius-link" class="active">°C</a> |
-<a href="#" id="fahrenheit-link">°F</a></span>
+       <h2> <strong id="temperature"></strong></h2>
+       <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a></span>
         <ul>
         </br>
             <li>
@@ -43,14 +46,21 @@
             
             
         </ul>
-    
+  
     <form id="search-form" class="mb-3">
         <div class="row">
             <div class="col-9">
-                <input type="search" placeholder="Type a city.." class="form-control" id="city-input" autocomplete="off" />
+                <input type="search" 
+                placeholder="Type a city.." 
+                class="form-control"
+                 id="city-input"
+                  autocomplete="off" 
+                  />
             </div>
             <div class="col-3">
-                <input type="submit" value="Search" class="btn btn-primary w-100" />
+                <input type="submit"
+                 value="Search" 
+                 class="btn btn-primary w-100" />
             </div>
         </div>
     </form>
@@ -72,10 +82,8 @@
         Tuesday
         </br>
 <li>
-    <img src="" alt="" id="icon" />
+<img src="" alt="" id="icon" />
 </li>
-
-           
         12 °C
         </div>
         <div class="col-sm">
@@ -93,8 +101,7 @@
             
                 <li>
                     <img src="" alt="" id="icon" />
-                </li>
-</br>
+</li>
             13 °C
         </div>
         <div class="col-sm">
