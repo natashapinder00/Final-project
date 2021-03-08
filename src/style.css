@@ -2,6 +2,7 @@ body {
   color: #0f84ac;
   text-align: center;
   font-family: "IBM Plex Sans", sans-serif;
+  background-image: url("../../media/vector-abstract-forest-illustration");
 }
 h1 {
   color: #0f84ac;
@@ -47,7 +48,6 @@ li:first-child {
 li:first-letter {
   text-transform: capitalize;
 }
-
 .weather-app img {
   margin-right: 5px;
   height: 64px;
