@@ -38,8 +38,8 @@ function displayTemperature(response) {
     let dateElement = document.querySelector("#date");
     let iconElement = document.querySelector("#icon");
 
-    celciusTemperature = response.data.main.temp;
-
+    celsiusTemperature = response.data.main.temp;
+    
     cityElement.innerHTML = response.data.name;
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
     descriptionElement.innerHTML = response.data.weather[0].description;

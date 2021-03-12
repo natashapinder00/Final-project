@@ -2,8 +2,6 @@ body {
   color: #0f84ac;
   text-align: center;
   font-family: "IBM Plex Sans", sans-serif;
-
-  background-image: url(src/media/vector-abstract-forest-illustration.jpg);
 }
 
 h1 {
@@ -56,8 +54,6 @@ li:first-letter {
   position: relative;
   top: -15px;
 }
-.background-image {
-}
 
 .weather-temperature img {
   margin-right: 5px;
@@ -78,8 +74,4 @@ li:first-letter {
   display: block;
   margin: 0 auto;
   cursor: pointer;
-}
-
-.moody_clouds {
-  padding: -10%;
 }
